@@ -1,0 +1,4 @@
+TODO for editing the code: 
+
+1. Create default primary key column if not defined when creating tables. The index should auto-increment with each insert.
+
