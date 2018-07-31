@@ -3,9 +3,9 @@ package common;
 
 public interface DatabaseConstants {
 
-    String PROMPT = "daklesql> ";
+    String PROMPT = "davisql> ";
     String VERSION = "v1.0";
-    String COPYRIGHT = "©2017 Parag Pravin Dakle";
+    String COPYRIGHT = "©2018 Orange Team";
 
     String DEFAULT_FILE_EXTENSION = ".tbl";
     String DEFAULT_DATA_DIRNAME = "data";
