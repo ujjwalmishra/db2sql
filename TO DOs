@@ -8,3 +8,6 @@ TODO for editing the code:
 3. Update DELETE syntax. Requirement is DELETE FROM TABLE table_name WHERE condition; 
     But the code accepts DELETE FROM table_name WHERE condition; 
 
+4. Create functions for CREATE INDEX and DROP INDEX. 
+   Syntax is not defined in requirements but it will create or remove an index on a single column of an existing table 
+   (i.e., PRIMARY KEY, NOT NULL).
