@@ -1,4 +1,5 @@
 TODO for editing the code: 
 
 1. Create default primary key column if not defined when creating tables. The index should auto-increment with each insert.
-
+2. Update INSERT syntax. Requirement is INSERT INTO TABLE [(column_list)] table_name VALUES (value1,value2,value3, ...); 
+    But the code accepts INSERT INTO table_name [(column_list)]  VALUES (value1,value2,value3, ...); 
