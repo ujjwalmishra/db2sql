@@ -124,7 +124,8 @@ public class QueryParser {
             }
 
             if(tableName.equals("")) {
-                tableName = userCommand.substring(QueryHandler.INSERT_COMMAND.length(), valuesIndex).trim();
+                String tableNameString = userCommand.substring(QueryHandler.INSERT_COMMAND.length(), valuesIndex).trim();
+                tableName = tableNameString.substring(tableNameString.indexOf(")") + 1, tableNameString.length()).trim();
             }
 
             String valuesList = userCommand.substring(valuesIndex + "values".length()).trim();

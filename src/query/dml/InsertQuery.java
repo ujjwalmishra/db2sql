@@ -215,7 +215,7 @@ public class InsertQuery implements IQuery {
                     datatypes.base.DataType obj = getDataTypeObject(dataType);
        
                     String val = "";
-                    if(column.equals("row_id")) {
+                    if(column.equals("row_id") && columns.indexOf(column) == -1) {
                     	DatabaseHelper helper = DatabaseHelper.getDatabaseHelper();
                     	columns.add(0, "row_id");
                     	try {
