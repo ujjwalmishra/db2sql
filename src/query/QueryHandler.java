@@ -130,9 +130,9 @@ public class QueryHandler {
         System.out.println("\tDROP TABLE table_name;                           Deletes a table data and its schema.");
         System.out.println("\tSELECT <column_list> FROM table_name             Display records whose rowid is <id>.");
         System.out.println("\t\t[WHERE rowid = <value>];");
-        System.out.println("\tINSERT INTO table_name                           Inserts a record into the table.");
-        System.out.println("\t\t[(<column1>, ...)] VALUES (<value1>, <value2>, ...);");
-        System.out.println("\tDELETE FROM table_name [WHERE condition];        Deletes a record from a table.");
+        System.out.println("\tINSERT INTO TABLE                           Inserts a record into the table.");
+        System.out.println("\t\t[(<column1>, ...)] table_name VALUES (<value1>, <value2>, ...);");
+        System.out.println("\tDELETE FROM TABLE table_name [WHERE condition];        Deletes a record from a table.");
         System.out.println("\tUPDATE table_name SET <conditions>               Updates a record from a table.");
         System.out.println("\t\t[WHERE condition];");
         System.out.println("\tVERSION;                                         Display current database engine version.");
