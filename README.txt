@@ -5,6 +5,9 @@ Due: August 1, 2018 11:59PM
 
 Team Orange members: Ujjawal Mishra, Pallavi Sinha, Usuma Thet, Vijay Venugopal
 
+System Requirements:
+JAVA Compiler - jre1.8.0_172
+
 Steps to run through Command Prompt:
 1) Extract the file and find the davisql jar file in db2sql-master\db2sql-master\davisql.jar
 2) Open cmd prompt
