@@ -206,14 +206,29 @@ public class InsertQuery implements IQuery {
             String column = retrievedColumns.get(i);
 
             if (columns != null) {
-                if (columns.contains(column)) {
+                if (columns.contains(column) || column.equals("row_id")) {
+                	
                     Byte dataType = (byte)columnDataTypeMapping.get(column).intValue();
 
                     int idx = columns.indexOf(column);
 
                     datatypes.base.DataType obj = getDataTypeObject(dataType);
-                    String val = values.get(idx).toString();
-
+       
+                    String val = "";
+                    if(column.equals("row_id")) {
+                    	DatabaseHelper helper = DatabaseHelper.getDatabaseHelper();
+                    	columns.add(0, "row_id");
+                    	try {
+							val = Integer.toString(helper.getTableRecordCount(this.databaseName, tableName) + 1);
+							values.add(0, Literal.CreateLiteral(val));
+                    	} catch (InternalException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+                    }
+                    else {
+                    	val = values.get(idx).toString();
+                    }
                     obj.setValue(getDataTypeValue(dataType, val));
                     columnList.add(obj);
                 } else {

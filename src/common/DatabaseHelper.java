@@ -82,9 +82,17 @@ public class DatabaseHelper {
 
             String isNullStr = ((DataType) nullValueObject).getStringValue().toUpperCase();
             boolean isNullable = isNullStr.equals("YES");
-
+            
+            //check for 
+            
             if (!columnMap.containsKey(((DataType) object).getStringValue()) && !isNullable) {
-                Utils.printMessage("ERROR(100N): Field '" + ((DataType) object).getStringValue() + "' cannot be NULL");
+            	System.out.println(((DataType) object).getStringValue());
+            	if(((DataType) object).getStringValue().equals("row_id")) {
+            		return true;
+            	}
+            	else {
+            		Utils.printMessage("ERROR(100N): Field '" + ((DataType) object).getStringValue() + "' cannot be NULL");
+            	}
                 return false;
             }
 
