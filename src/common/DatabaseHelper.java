@@ -86,7 +86,6 @@ public class DatabaseHelper {
             //check for 
             
             if (!columnMap.containsKey(((DataType) object).getStringValue()) && !isNullable) {
-            	System.out.println(((DataType) object).getStringValue());
             	if(((DataType) object).getStringValue().equals("row_id")) {
             		return true;
             	}
