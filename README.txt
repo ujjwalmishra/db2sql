@@ -7,6 +7,7 @@ Team Orange members: Ujjawal Mishra, Pallavi Sinha, Usuma Thet, Vijay Venugopal
 
 System Requirements:
 Java Runtime Version - jre1.8.0_172
+Compiler Version should match with the current jdk.
 
 Steps to run through Command Prompt:
 1) Extract the file and find the davisql jar file in db2sql-master\db2sql-master\davisql.jar
