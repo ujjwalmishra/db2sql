@@ -26,7 +26,7 @@ public class QueryHandler {
     static final String SHOW_TABLES_COMMAND = "SHOW TABLES";
     static final String SHOW_DATABASES_COMMAND = "SHOW DATABASES";
     static final String INSERT_COMMAND = "INSERT INTO TABLE";
-    static final String DELETE_COMMAND = "DELETE FROM";
+    static final String DELETE_COMMAND = "DELETE FROM TABLE";
     static final String UPDATE_COMMAND = "UPDATE";
     static final String CREATE_TABLE_COMMAND = "CREATE TABLE";
     static final String CREATE_DATABASE_COMMAND = "CREATE DATABASE";
